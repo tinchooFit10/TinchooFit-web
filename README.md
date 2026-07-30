@@ -1,2 +1,3 @@
-# TinchooFit-web
-Sitio web oficial de Tinchoofit
+# TinchooFit
+Preprador Fisico-Fuerza-Rendimient
+Quiero empezar
