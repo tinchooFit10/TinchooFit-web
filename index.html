@@ -10,19 +10,23 @@
 
     <style>
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #0d0d0d;
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
-            padding: 0;
         }
 
         nav {
             width: 100%;
             background-color: #111111;
-            padding: 20px 0;
+            padding: 20px;
             position: sticky;
             top: 0;
         }
@@ -30,8 +34,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 20px;
-            font-size: 18px;
+            margin: 0 15px;
         }
 
         nav a:hover {
@@ -39,74 +42,51 @@
         }
 
         .hero {
-            padding: 100px 20px;
+            padding: 100px 30px;
         }
 
         h1 {
             font-size: 60px;
+            margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 40px;
+            margin-bottom: 30px;
         }
 
         .subtitulo {
             font-size: 24px;
+            margin-bottom: 20px;
         }
 
         .descripcion {
             max-width: 700px;
-            margin: 30px auto;
-            line-height: 1.5;
+            margin: auto;
+            line-height: 1.6;
         }
 
         button {
-            background: #e50914;
+            margin-top: 40px;
+            background-color: #e50914;
             color: white;
             border: none;
-            padding: 18px 35px;
             border-radius: 50px;
+            padding: 18px 35px;
             font-size: 18px;
-            font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            transform: scale(1.05);
-            background: #ff1e1e;
         }
 
         section {
-            padding: 50px;
-        }
-
-        .paso {
-            background: #1a1a1a;
-            margin: 20px auto;
-            max-width: 600px;
-            padding: 20px;
-            border-radius: 15px;
-        }
-
-        .resultados {
             padding: 80px 20px;
         }
 
-        .tarjeta {
+        .tarjeta,
+        .paso {
             background-color: #1a1a1a;
-            border-radius: 20px;
+            border-radius: 15px;
             padding: 25px;
             margin: 20px auto;
-            max-width: 500px;
-        }
-
-        .tarjeta:hover {
-            transform: scale(1.03);
-        }
-
-        .formulario {
-            padding: 80px 20px;
+            max-width: 600px;
         }
 
         form {
@@ -132,14 +112,17 @@
 
         .whatsapp {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
-            padding: 15px 25px;
-            border-radius: 50px;
-            font-weight: bold;
+            bottom: 25px;
+            right: 25px;
+        }
+
+        .whatsapp img {
+            width: 60px;
+            transition: 0.3s;
+        }
+
+        .whatsapp img:hover {
+            transform: scale(1.1);
         }
 
     </style>
@@ -162,11 +145,11 @@
         <h1>TinchooFit</h1>
 
         <p class="subtitulo">
-            Asesorías de entrenamiento personalizadas.
+            Asesorías de entrenamiento personalizadas
         </p>
 
         <p class="descripcion">
-            Si estás cansado de entrenar sin un plan y no obtener resultados, estás en el lugar correcto.
+            Si estás cansado de entrenar sin un plan y no obtener resultados, este es el lugar indicado para vos.
         </p>
 
         <button>
@@ -175,23 +158,23 @@
 
     </section>
 
-    <section class="resultados">
+    <section>
 
         <h2>Transformaciones</h2>
 
         <div class="tarjeta">
             <h3>Más fuerza</h3>
-            <p>Planificación personalizada y seguimiento semanal.</p>
+            <p>Planificación personalizada.</p>
         </div>
 
         <div class="tarjeta">
             <h3>Mejor rendimiento</h3>
-            <p>Entrenamientos adaptados a tus objetivos.</p>
+            <p>Seguimiento semanal.</p>
         </div>
 
         <div class="tarjeta">
             <h3>Menos lesiones</h3>
-            <p>Trabajo específico para mejorar el movimiento.</p>
+            <p>Trabajo específico para cada objetivo.</p>
         </div>
 
     </section>
@@ -207,23 +190,23 @@
 
         <div class="paso">
             <h3>Paso 2</h3>
-            <p>Analizo tu caso.</p>
+            <p>Analizo tu situación.</p>
         </div>
 
         <div class="paso">
             <h3>Paso 3</h3>
-            <p>Comenzamos a trabajar juntos.</p>
+            <p>Empezamos a trabajar juntos.</p>
         </div>
 
     </section>
 
-    <section class="formulario">
+    <section>
 
         <h2>Comencemos</h2>
 
         <form>
 
-            <input type="text" placeholder="Nombre completo">
+            <input type="text" placeholder="Nombre">
 
             <input type="email" placeholder="Correo electrónico">
 
@@ -231,7 +214,7 @@
 
             <input type="text" placeholder="Ciudad">
 
-            <textarea placeholder="Contame cuál es tu objetivo."></textarea>
+            <textarea placeholder="Contame cuál es tu objetivo"></textarea>
 
             <button>Enviar</button>
 
@@ -239,8 +222,12 @@
 
     </section>
 
-    <a class="whatsapp" href="https://wa.me/5492494278379">
-        WhatsApp
+    <a class="whatsapp"
+        href="https://wa.me/5492494205062"
+        target="_blank">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
     </a>
 
 </body>
