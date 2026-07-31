@@ -4,9 +4,7 @@
 <head>
 
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>TinchooFit</title>
 
@@ -25,8 +23,12 @@
             padding: 100px 20px;
         }
 
-        h1 { <img src="foto.jpg" class="foto-principal">
+        h1 {
             font-size: 60px;
+        }
+
+        h2 {
+            font-size: 40px;
         }
 
         .subtitulo {
@@ -40,109 +42,57 @@
         }
 
         button {
-button {
+            background: #e50914;
+            color: white;
+            border: none;
+            padding: 18px 35px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
 
-    background: #e50914;
-    color: white;
-    border: none;
-    padding: 18px 35px;
-    border-radius: 50px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-
-}
-
-button:hover {
-
-    transform: scale(1.05);
-    background: #ff1e1e;
-
-}
-
+        button:hover {
+            transform: scale(1.05);
+            background: #ff1e1e;
         }
 
         section {
-            <section class="resultados">
-
-    <h2>Transformaciones</h2>
-
-    <div class="tarjeta">
-
-        <h3>Más fuerza</h3>
-
-        <p>
-            Planificación personalizada y seguimiento semanal.
-        </p>
-
-    </div>
-
-    <div class="tarjeta">
-
-        <h3>Mejor rendimiento</h3>
-
-        <p>
-            Entrenamientos adaptados a tus objetivos.
-        </p>
-
-    </div>
-
-    <div class="tarjeta">
-
-        <h3>Menos lesiones</h3>
-
-        <p>
-            Trabajo específico para mejorar el movimiento.
-        </p>
-
-    </div>
-
-</section>
-
             padding: 50px;
-
         }
 
         .paso {
-
             background: #1a1a1a;
             margin: 20px auto;
             max-width: 600px;
             padding: 20px;
             border-radius: 15px;
+        }
 
+        .resultados {
+            padding: 80px 20px;
+        }
+
+        .tarjeta {
+            background-color: #1a1a1a;
+            border-radius: 20px;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+
+        .tarjeta:hover {
+            transform: scale(1.03);
+        }
+
+        .foto-principal {
+            width: 250px;
+            border-radius: 20px;
+            margin-bottom: 30px;
         }
 
     </style>
-    .resultados {
-
-    padding: 80px 20px;
-
-}
-
-.tarjeta {
-
-    background-color: #1a1a1a;
-    border-radius: 20px;
-    padding: 25px;
-    margin: 20px auto;
-    max-width: 500px;
-
-}
-
-.tarjeta:hover {
-
-    transform: scale(1.03);
-
-}
-    .foto-principal {
-
-    width: 250px;
-    border-radius: 20px;
-    margin-bottom: 30px;
-
-}
 
 </head>
 
@@ -172,27 +122,39 @@ button:hover {
         <h2>¿Cómo funciona?</h2>
 
         <div class="paso">
-
             <h3>Paso 1</h3>
-
             <p>Completás el formulario.</p>
-
         </div>
 
         <div class="paso">
-
             <h3>Paso 2</h3>
-
             <p>Analizo tu situación.</p>
-
         </div>
 
         <div class="paso">
-
             <h3>Paso 3</h3>
-
             <p>Comenzamos a trabajar juntos.</p>
+        </div>
 
+    </section>
+
+    <section class="resultados">
+
+        <h2>Transformaciones</h2>
+
+        <div class="tarjeta">
+            <h3>Más fuerza</h3>
+            <p>Planificación personalizada y seguimiento semanal.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Mejor rendimiento</h3>
+            <p>Entrenamientos adaptados a tus objetivos.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Menos lesiones</h3>
+            <p>Trabajo específico para mejorar el movimiento.</p>
         </div>
 
     </section>
