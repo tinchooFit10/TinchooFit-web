@@ -42,11 +42,19 @@
         }
 
         .hero {
-            padding: 100px 30px;
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 30px;
+        }
+
+        .hero-contenido {
+            max-width: 800px;
         }
 
         h1 {
-            font-size: 60px;
+            font-size: 70px;
             margin-bottom: 20px;
         }
 
@@ -76,17 +84,29 @@
             cursor: pointer;
         }
 
+        button:hover {
+            background-color: #ff1a1a;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
         section {
             padding: 80px 20px;
         }
 
         .tarjeta,
-        .paso {
+        .paso,
+        .testimonio {
             background-color: #1a1a1a;
             border-radius: 15px;
             padding: 25px;
             margin: 20px auto;
-            max-width: 600px;
+            max-width: 700px;
+        }
+
+        .testimonio h4 {
+            color: #e50914;
+            margin-top: 15px;
         }
 
         form {
@@ -118,11 +138,6 @@
 
         .whatsapp img {
             width: 60px;
-            transition: 0.3s;
-        }
-
-        .whatsapp img:hover {
-            transform: scale(1.1);
         }
 
     </style>
@@ -142,19 +157,25 @@
 
     <section class="hero">
 
-        <h1>TinchooFit</h1>
+        <div class="hero-contenido">
 
-        <p class="subtitulo">
-            Asesorías de entrenamiento personalizadas
-        </p>
+            <h1>TinchooFit</h1>
 
-        <p class="descripcion">
-            Si estás cansado de entrenar sin un plan y no obtener resultados, este es el lugar indicado para vos.
-        </p>
+            <p class="subtitulo">
+                Transformá tu cuerpo y tu rendimiento.
+            </p>
 
-        <button>
-            Quiero que analices mi caso
-        </button>
+            <p class="descripcion">
+
+                Dejá de entrenar sin un plan. Construí fuerza, evitá lesiones y alcanzá tus objetivos.
+
+            </p>
+
+            <button>
+                Quiero que analices mi caso
+            </button>
+
+        </div>
 
     </section>
 
@@ -163,18 +184,63 @@
         <h2>Transformaciones</h2>
 
         <div class="tarjeta">
+
             <h3>Más fuerza</h3>
+
             <p>Planificación personalizada.</p>
+
         </div>
 
         <div class="tarjeta">
+
             <h3>Mejor rendimiento</h3>
+
             <p>Seguimiento semanal.</p>
+
         </div>
 
         <div class="tarjeta">
+
             <h3>Menos lesiones</h3>
-            <p>Trabajo específico para cada objetivo.</p>
+
+            <p>Trabajo específico.</p>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Lo que dicen mis alumnos</h2>
+
+        <div class="testimonio">
+
+            <p>
+                "Volví a disfrutar de los entrenamientos y mejoré mi rendimiento."
+            </p>
+
+            <h4>★★★★★</h4>
+
+        </div>
+
+        <div class="testimonio">
+
+            <p>
+                "Aumenté mi fuerza y disminuyeron mis molestias físicas."
+            </p>
+
+            <h4>★★★★★</h4>
+
+        </div>
+
+        <div class="testimonio">
+
+            <p>
+                "Por primera vez siento que tengo un plan adaptado a mí."
+            </p>
+
+            <h4>★★★★★</h4>
+
         </div>
 
     </section>
@@ -184,18 +250,27 @@
         <h2>¿Cómo funciona?</h2>
 
         <div class="paso">
+
             <h3>Paso 1</h3>
+
             <p>Completás el formulario.</p>
+
         </div>
 
         <div class="paso">
+
             <h3>Paso 2</h3>
+
             <p>Analizo tu situación.</p>
+
         </div>
 
         <div class="paso">
+
             <h3>Paso 3</h3>
+
             <p>Empezamos a trabajar juntos.</p>
+
         </div>
 
     </section>
