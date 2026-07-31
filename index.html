@@ -105,6 +105,43 @@
             transform: scale(1.03);
         }
 
+        .formulario {
+            padding: 80px 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        input,
+        textarea {
+            background-color: #1a1a1a;
+            border: none;
+            color: white;
+            padding: 18px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+
+        textarea {
+            min-height: 120px;
+        }
+
+        .whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+
     </style>
 
 </head>
@@ -117,7 +154,6 @@
         <a href="#">Método</a>
         <a href="#">Resultados</a>
         <a href="#">Contacto</a>
-        <a href="#">Instagram</a>
 
     </nav>
 
@@ -180,6 +216,32 @@
         </div>
 
     </section>
+
+    <section class="formulario">
+
+        <h2>Comencemos</h2>
+
+        <form>
+
+            <input type="text" placeholder="Nombre completo">
+
+            <input type="email" placeholder="Correo electrónico">
+
+            <input type="number" placeholder="Edad">
+
+            <input type="text" placeholder="Ciudad">
+
+            <textarea placeholder="Contame cuál es tu objetivo."></textarea>
+
+            <button>Enviar</button>
+
+        </form>
+
+    </section>
+
+    <a class="whatsapp" href="https://wa.me/5492494278379">
+        WhatsApp
+    </a>
 
 </body>
 
